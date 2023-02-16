@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: example-java-maven-yiwj
+  namespace: burrzinga-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:c0fa19a9a753c8a63eb69b61b27fafc0b9ab899b469a32fafd676737822acf15
+        name: my-java-springboot
+        resources: {}
+status: {}
