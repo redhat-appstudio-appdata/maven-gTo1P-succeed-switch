@@ -1,0 +1,21 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: example-java-maven-yiwj
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: example-java-maven-yiwj
+    app.kubernetes.io/part-of: maven
+  name: example-java-maven-yiwj
+  namespace: burrzinga-tenant
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: example-java-maven-yiwj
+    weight: null
+status: {}

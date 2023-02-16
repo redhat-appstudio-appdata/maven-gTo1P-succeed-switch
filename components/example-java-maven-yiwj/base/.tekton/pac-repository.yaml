@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: maven
+    appstudio.openshift.io/component: example-java-maven-yiwj
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: example-java-maven-yiwj
+  namespace: burrzinga-tenant
+spec:
+  url: https://github.com/burrzinga/example-java-maven
